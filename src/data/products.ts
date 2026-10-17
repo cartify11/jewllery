@@ -83,7 +83,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'An architectural statement piece flowing seamlessly against the collarbone. Features 142 pavé-set round brilliant diamonds graduating towards a luminous central bezel, held by an articulated solid gold ribbon.',
     story: 'Inspired by the graceful curvature of modern Haute Couture drapery, every link is individually articulated by our master setters over forty hours of precise hand assembly.',
@@ -185,7 +185,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isBestSeller: true,
     isNew: false,
     images: [
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000',
     ],
@@ -290,7 +290,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isBestSeller: true,
     isNew: false,
     images: [
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=1000',
     ],
@@ -392,7 +392,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isNew: false,
     images: [
       'https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'An ancient talisman reborn. Radiating hand-engraved sun rays expand from a central pavé diamond starburst, hanging from a heavy rounded wheat chain.',
@@ -651,7 +651,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isNew: false,
     images: [
       'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'A liquid ribbon of solid 18K yellow gold that drapes seamlessly around the collarbone. Hand-assembled with micro-links for mirror-like light reflection.',
@@ -905,7 +905,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'An architectural oval bangle engineered to hug the wrist contour, featuring a continuous ribbon of channel-set diamonds and hidden push clasp.',
     story: 'Constructed from two solid gold halves milled from single bullion blocks for lifelong durability.',
@@ -1105,7 +1105,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     stockCount: 6,
     isBestSeller: true,
     images: [
-      'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=1000',
     ],
@@ -1271,14 +1271,14 @@ export const CATEGORIES_DATA = [
     slug: 'bracelets',
     description: 'Tennis bracelets, architectural cuffs & bangles',
     itemCount: '24 pieces',
-    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800',
   },
   {
     name: 'Gold Jewellery',
     slug: 'gold',
     description: 'Substantial solid 18K yellow, rose & white gold',
     itemCount: '56 pieces',
-    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=800',
   },
   {
     name: 'Diamond Jewellery',
@@ -1313,7 +1313,7 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: 'ig-4',
-    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=80&w=600',
     likes: '5,310',
     tag: '@aureliajewels',
     caption: 'Wrist stacks redefined. Solid 18K gold and diamond tennis brilliance.',
@@ -1395,7 +1395,7 @@ export const EDITORIAL_LOOKBOOK = [
   {
     title: 'Sculpted Gold Bangles',
     subtitle: 'Solid 22K Gold Karras & Hand-Forged Cuffs',
-    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=85&w=1200',
+    image: 'https://images.unsplash.com/photo-1603561591411-07134e71a2a9?auto=format&fit=crop&q=85&w=1200',
   },
   {
     title: 'Solitaire Brilliance',
