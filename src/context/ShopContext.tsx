@@ -11,7 +11,7 @@ interface Toast {
 interface ShopContextType {
   activePage: ActivePage;
   selectedProductId: string | null;
-  navigateTo: (page: ActivePage, productId?: string) => void;
+  navigateTo: (page: ActivePage, productId?: string, pushHistory?: boolean) => void;
   
   // Cart
   cart: CartItem[];
@@ -138,14 +138,76 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
     setToasts((prev) => prev.filter((t) => t.id !== id));
   };
 
-  // Navigation
-  const navigateTo = (page: ActivePage, productId?: string) => {
+  // Browser History Navigation (Enables browser Back & Forward buttons)
+  useEffect(() => {
+    // Check initial URL hash on first load
+    const parseInitialUrl = () => {
+      const hash = window.location.hash;
+      if (hash.startsWith('#/product/')) {
+        const pId = hash.replace('#/product/', '');
+        if (pId) {
+          setSelectedProductId(pId);
+          setActivePage('product-detail');
+        }
+      } else if (hash.startsWith('#/')) {
+        const pageName = hash.replace('#/', '') as ActivePage;
+        if (pageName) setActivePage(pageName);
+      }
+    };
+
+    parseInitialUrl();
+
+    // Listen for browser Back and Forward button events
+    const handlePopState = (event: PopStateEvent) => {
+      if (event.state && event.state.page) {
+        if (event.state.productId) {
+          setSelectedProductId(event.state.productId);
+        }
+        setActivePage(event.state.page);
+      } else {
+        const hash = window.location.hash;
+        if (hash.startsWith('#/product/')) {
+          const pId = hash.replace('#/product/', '');
+          setSelectedProductId(pId);
+          setActivePage('product-detail');
+        } else if (hash.startsWith('#/')) {
+          const pageName = hash.replace('#/', '') as ActivePage;
+          setActivePage(pageName || 'home');
+        } else {
+          setActivePage('home');
+        }
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
+  // Navigation with browser history tracking
+  const navigateTo = (page: ActivePage, productId?: string, pushHistory = true) => {
     if (productId) {
       setSelectedProductId(productId);
       const prod = LUXURY_PRODUCTS.find((p) => p.id === productId);
       if (prod) addRecentlyViewed(prod);
     }
     setActivePage(page);
+
+    if (pushHistory) {
+      const targetHash =
+        page === 'home'
+          ? ''
+          : page === 'product-detail' && productId
+          ? `#/product/${productId}`
+          : `#/${page}`;
+
+      const targetUrl = targetHash
+        ? `${window.location.pathname}${window.location.search}${targetHash}`
+        : `${window.location.pathname}${window.location.search}`;
+
+      window.history.pushState({ page, productId }, '', targetUrl);
+    }
+
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 

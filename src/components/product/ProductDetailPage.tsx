@@ -124,17 +124,36 @@ export const ProductDetailPage: React.FC = () => {
   return (
     <div className="bg-brand-ivory min-h-screen py-10 lg:py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Breadcrumb Navigation */}
-        <div className="flex items-center gap-2 text-xs uppercase tracking-luxury text-brand-grey mb-8">
-          <button onClick={() => navigateTo('home')} className="hover:text-brand-black transition-colors">
-            Home
-          </button>
-          <span>/</span>
-          <button onClick={() => navigateTo('shop')} className="hover:text-brand-black transition-colors">
-            {product.category}
-          </button>
-          <span>/</span>
-          <span className="text-brand-black font-semibold truncate max-w-xs">{product.name}</span>
+        {/* Top Navigation Bar with Prominent Back to Home Button */}
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-8 pb-4 border-b border-brand-beige">
+          <div className="flex items-center gap-3">
+            <button
+              onClick={() => navigateTo('home')}
+              className="inline-flex items-center gap-2 px-4 py-2.5 bg-white hover:bg-brand-gold hover:text-brand-black text-brand-black border border-brand-gold/40 text-xs uppercase tracking-luxury font-bold transition-all shadow-sm group"
+            >
+              <ArrowLeft className="w-4 h-4 group-hover:-translate-x-1.5 transition-transform" />
+              <span>← Back to Home</span>
+            </button>
+            <button
+              onClick={() => navigateTo('shop')}
+              className="inline-flex items-center gap-1.5 px-3 py-2 bg-transparent hover:bg-white text-stone-600 hover:text-brand-black text-xs uppercase tracking-luxury font-medium transition-colors"
+            >
+              <span>View All Jewellery</span>
+            </button>
+          </div>
+
+          {/* Breadcrumb Navigation */}
+          <div className="flex items-center gap-2 text-xs uppercase tracking-luxury text-stone-500">
+            <button onClick={() => navigateTo('home')} className="hover:text-brand-gold transition-colors font-medium">
+              Home
+            </button>
+            <span>/</span>
+            <button onClick={() => navigateTo('shop')} className="hover:text-brand-gold transition-colors font-medium">
+              {product.category}
+            </button>
+            <span>/</span>
+            <span className="text-brand-black font-semibold truncate max-w-xs">{product.name}</span>
+          </div>
         </div>
 
         {/* Main Product Showcase Grid */}

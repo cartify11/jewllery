@@ -32,6 +32,14 @@ const QuickViewModalContent: React.FC<QuickViewModalContentProps> = ({ product }
     setQuickViewProduct(null);
   };
 
+  React.useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === 'Escape') setQuickViewProduct(null);
+    };
+    window.addEventListener('keydown', handleKeyDown);
+    return () => window.removeEventListener('keydown', handleKeyDown);
+  }, [setQuickViewProduct]);
+
   return (
     <div className="fixed inset-0 z-50 overflow-y-auto">
       {/* Backdrop */}
