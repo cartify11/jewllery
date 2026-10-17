@@ -33,9 +33,9 @@ export const BrandStorySection: React.FC = () => {
             {/* Gold Accent Emblem */}
             <div className="absolute top-6 left-6 z-30 bg-brand-black/90 text-brand-gold p-4 shadow-xl border border-brand-gold/30 hidden sm:block">
               <span className="block text-[10px] uppercase tracking-[0.3em] font-semibold text-brand-gold">
-                Atelier Poinçon
+                Heritage Artisans
               </span>
-              <span className="font-serif text-lg text-white">750 / PT950</span>
+              <span className="font-serif text-lg text-white">21K • 22K Solid Gold</span>
             </div>
           </div>
 
@@ -43,41 +43,41 @@ export const BrandStorySection: React.FC = () => {
           <div className="lg:col-span-6 space-y-6">
             <div className="flex items-center gap-2 text-brand-gold text-[11px] uppercase tracking-[0.28em] font-medium">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>The Maison's Philosophy</span>
+              <span>The Heritage Philosophy</span>
             </div>
 
             <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl font-normal text-brand-black leading-tight">
-              Where Ancient Alchemy Meets Modern Architecture
+              Where Royal Heritage Meets Modern Elegance
             </h2>
 
             <div className="w-16 h-[1.5px] bg-brand-gold" />
 
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-normal">
-              Founded on the belief that fine jewellery should be as personal as poetry and as lasting as sculpture, AURELIA JEWELS marries centuries of European bench-goldsmithing with clean, architectural lines.
+              Founded on the belief that fine jewellery should be as personal as poetry and as lasting as sculpture, AURELIA JEWELS marries generations of royal goldsmithing traditions with clean, contemporary elegance.
             </p>
 
             <p className="text-stone-600 text-sm sm:text-base leading-relaxed font-normal">
-              Every creation begins with certified recycled 18K solid gold and meticulously scrutinized natural and ethical lab diamonds—chosen not merely for technical grades, but for the untamed fire and vitality of each individual stone.
+              Every creation begins with 100% hallmarked 21K and 22K solid gold and meticulously selected natural and certified diamonds—chosen not merely for technical grades, but for the untamed fire and vitality of each individual stone.
             </p>
 
             {/* Three Pillar Icons */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-4 border-t border-brand-beige">
               <div>
                 <Award className="w-5 h-5 text-brand-gold mb-2 stroke-[1.5]" />
-                <h4 className="text-xs uppercase tracking-luxury font-medium text-brand-black">RJ Council</h4>
-                <p className="text-[11px] text-brand-grey mt-1">Certified sustainable sourcing protocols</p>
+                <h4 className="text-xs uppercase tracking-luxury font-medium text-brand-black">Hallmarked Gold</h4>
+                <p className="text-[11px] text-brand-grey mt-1">Certified 100% purity and tested gold standards</p>
               </div>
 
               <div>
                 <Compass className="w-5 h-5 text-brand-gold mb-2 stroke-[1.5]" />
-                <h4 className="text-xs uppercase tracking-luxury font-medium text-brand-black">Micro-Prong</h4>
-                <p className="text-[11px] text-brand-grey mt-1">Engineered for maximal optical brilliance</p>
+                <h4 className="text-xs uppercase tracking-luxury font-medium text-brand-black">Micro-Setting</h4>
+                <p className="text-[11px] text-brand-grey mt-1">Engineered for maximal brilliance and durability</p>
               </div>
 
               <div>
                 <Feather className="w-5 h-5 text-brand-gold mb-2 stroke-[1.5]" />
                 <h4 className="text-xs uppercase tracking-luxury font-medium text-brand-black">Hand-Polished</h4>
-                <p className="text-[11px] text-brand-grey mt-1">Silky mirror polish on all skin contacts</p>
+                <p className="text-[11px] text-brand-grey mt-1">Silky mirror finish on all skin contact surfaces</p>
               </div>
             </div>
 
@@ -86,7 +86,7 @@ export const BrandStorySection: React.FC = () => {
                 onClick={() => navigateTo('about')}
                 className="inline-flex items-center gap-2 text-xs uppercase tracking-luxury font-bold text-brand-black hover:text-brand-gold transition-colors group"
               >
-                <span>Read The Aurelia Heritage & Atelier Story</span>
+                <span>Read The Aurelia Heritage Story</span>
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1.5 transition-transform" />
               </button>
             </div>

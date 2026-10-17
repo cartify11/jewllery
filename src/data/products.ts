@@ -1378,23 +1378,23 @@ export const INSTAGRAM_POSTS = [
 
 export const EDITORIAL_LOOKBOOK = [
   {
-    title: 'The High Fine Jewellery Campaign',
-    subtitle: 'Autumn / Winter Collection in 18K Solid Gold',
+    title: 'The Royal Bridal Campaign',
+    subtitle: 'Signature Wedding Sets in 22K Solid Gold',
     image: 'https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?auto=format&fit=crop&q=85&w=1200',
   },
   {
-    title: 'Place Vendôme Atelier',
-    subtitle: 'Master Goldsmiths and Micro-Prong Benchwork',
+    title: 'Master Goldsmith Atelier',
+    subtitle: 'Handcrafted Heritage Filigree and Kundan Benchwork',
     image: 'https://images.unsplash.com/photo-1531995811006-35cb42e1a022?auto=format&fit=crop&q=85&w=1200',
   },
   {
-    title: 'The Sovereign Emerald Reserve',
-    subtitle: 'Untreated Colombian Muzo Gemstones',
+    title: 'The Shahi Emerald Reserve',
+    subtitle: 'Natural Emerald & Certified Diamond Suites',
     image: 'https://images.unsplash.com/photo-1598560917505-59a3ad559071?auto=format&fit=crop&q=85&w=1200',
   },
   {
-    title: 'Sculptural Modernity',
-    subtitle: 'Architectural Cuffs & Heavy Italian Links',
+    title: 'Sculpted Gold Bangles',
+    subtitle: 'Solid 22K Gold Karras & Hand-Forged Cuffs',
     image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=85&w=1200',
   },
   {
@@ -1403,8 +1403,8 @@ export const EDITORIAL_LOOKBOOK = [
     image: 'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=85&w=1200',
   },
   {
-    title: 'Golden Hour Reflections',
-    subtitle: 'Warm Champagne Tones and Mirror Polish',
+    title: 'Heirloom Gold Reflections',
+    subtitle: 'Pure 21K & 22K Solid Gold with Mirror Polish',
     image: 'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=85&w=1200',
   },
 ];
@@ -1412,23 +1412,23 @@ export const EDITORIAL_LOOKBOOK = [
 export const TESTIMONIALS = [
   {
     id: 't-1',
-    quote: 'The craftsmanship of AURELIA JEWELS matches the storied Maisons of Place Vendôme, yet with an intimate, contemporary touch that feels distinctly modern.',
-    author: 'Vogue Horlogerie & Joaillerie',
-    role: 'Editorial Review',
+    quote: 'The craftsmanship of AURELIA JEWELS for my daughter’s bridal set was beyond exceptional. Pure 22K gold hallmarked to perfection and delivered securely to our residence in Lahore.',
+    author: 'Begum Salma Farooq',
+    role: 'Bridal Client, Lahore (Gulberg)',
     rating: 5,
   },
   {
     id: 't-2',
-    quote: 'From the private consultation to the discreet armored delivery, AURELIA redefined what purchasing high jewellery should feel like in 2026.',
-    author: 'Eleanor Vance-Croft',
-    role: 'Private Client, London',
+    quote: 'From private appointment to insured doorstep transit in Karachi, Aurelia offers an unprecedented fine jewellery experience in Pakistan. 100% authentic diamonds and flawless finish.',
+    author: 'Zainab & Bilal Mansoor',
+    role: 'Private Client, Karachi (DHA)',
     rating: 5,
   },
   {
     id: 't-3',
-    quote: 'The Lumina ring exceeded every expectation. The diamond has a pure, unclouded fire, and the gold feels like silk. It is genuinely breathtaking.',
-    author: 'Dr. Alistair & Genevieve Thorne',
-    role: 'Zurich, Switzerland',
+    quote: 'The solitaire ring exceeded every expectation. The diamond has pure fire, the 21K solid gold is silky smooth, and the official laboratory certificate gives complete peace of mind.',
+    author: 'Dr. Shahmeer & Ayla Khan',
+    role: 'Islamabad (F-7)',
     rating: 5,
   },
 ];

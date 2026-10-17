@@ -12,14 +12,14 @@ export const EditorialLookbook: React.FC = () => {
         <div className="text-center max-w-2xl mx-auto mb-16">
           <div className="inline-flex items-center gap-2 text-brand-gold text-[10px] uppercase tracking-[0.3em] font-medium mb-2">
             <Sparkles className="w-3.5 h-3.5" />
-            <span>Haute Joaillerie Campaign</span>
+            <span>Royal Fine Jewellery Lookbook</span>
           </div>
           <h2 className="font-serif text-3xl sm:text-5xl font-normal text-brand-black">
-            The Autumn / Winter Lookbook
+            The Royal Festive & Bridal Lookbook
           </h2>
           <div className="w-12 h-[1px] bg-brand-gold mx-auto my-4" />
           <p className="text-xs sm:text-sm text-stone-600 font-normal leading-relaxed">
-            A visual symphony of rare light, sculpted 18K solid gold, and sovereign gemstones captured in our European ateliers.
+            A curated visual symphony of sculpted 21K & 22K solid gold, certified diamonds, and heritage gemstones crafted by master goldsmiths.
           </p>
         </div>
 
