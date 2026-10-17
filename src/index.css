@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Montserrat:wght@200;300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+  }
+  
+  body {
+    background-color: #FAF7F0;
+    color: #111111;
+    overflow-x: hidden;
+    font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+  }
+
+  button, input, select, textarea {
+    font-family: 'Montserrat', 'Inter', system-ui, sans-serif;
+  }
+
+  h1, h2, h3, .font-serif {
+    font-family: 'Playfair Display', 'Cormorant Garamond', Georgia, serif;
+    letter-spacing: 0.01em;
+  }
+
+  /* Custom subtle scrollbar */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #FAF7F0;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #C6A15B;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #9E7B3B;
+  }
+}
+
+@layer utilities {
+  .font-editorial {
+    font-family: 'Cormorant Garamond', 'Playfair Display', Georgia, serif;
+  }
+  
+  .luxury-border {
+    border-color: rgba(198, 161, 91, 0.25);
+  }
+  
+  .luxury-gold-gradient {
+    background: linear-gradient(135deg, #FAF7F0 0%, #F5EFE6 50%, #FAF7F0 100%);
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(90deg, #111111 0%, #C6A15B 50%, #111111 100%);
+    background-size: 200% auto;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: shine 4s linear infinite;
+  }
+
+  @keyframes shine {
+    to {
+      background-position: 200% center;
+    }
+  }
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
