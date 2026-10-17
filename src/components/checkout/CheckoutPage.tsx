@@ -39,7 +39,7 @@ export const CheckoutPage: React.FC = () => {
     city: '',
     state: '',
     postalCode: '',
-    country: 'United States',
+    country: 'Pakistan',
   });
 
   const [shippingMethod, setShippingMethod] = useState<'standard' | 'vault' | 'salon'>('standard');
@@ -72,9 +72,9 @@ export const CheckoutPage: React.FC = () => {
     );
   }
 
-  const shippingCost = shippingMethod === 'vault' ? 45 : 0;
-  const estimatedTax = cartSubtotal * 0.05;
-  const wireDiscount = paymentMethod === 'wire' ? cartSubtotal * 0.02 : 0;
+  const shippingCost = shippingMethod === 'vault' ? 350 : 0;
+  const estimatedTax = 0;
+  const wireDiscount = paymentMethod === 'wire' ? Math.round(cartSubtotal * 0.02) : 0;
   const finalTotal = Math.max(0, cartSubtotal + shippingCost + estimatedTax - wireDiscount);
 
   const handleInputChange = (field: string, val: string) => {
@@ -458,14 +458,14 @@ export const CheckoutPage: React.FC = () => {
                         <ShieldCheck className="w-5 h-5 text-brand-gold shrink-0" />
                         <div>
                           <span className="block text-xs uppercase tracking-luxury font-semibold text-brand-black">
-                            Dedicated Armed Courier Vault Transit
+                            Express Insured Courier Transit (TCS / Leopards)
                           </span>
                           <span className="text-xs text-brand-grey">
-                            Guaranteed next-morning dispatch directly to residence or banking vault.
+                            Guaranteed next-day priority dispatch with insured tamper-proof packaging.
                           </span>
                         </div>
                       </div>
-                      <span className="text-xs font-semibold text-brand-black">{formatPrice(45)}</span>
+                      <span className="text-xs font-semibold text-brand-black">{formatPrice(350)}</span>
                     </div>
                   </label>
 
@@ -640,9 +640,9 @@ export const CheckoutPage: React.FC = () => {
                 {/* Wire Transfer Details */}
                 {paymentMethod === 'wire' && (
                   <div className="p-4 bg-brand-ivory border border-brand-beige text-xs text-brand-grey space-y-2">
-                    <p className="font-semibold text-brand-black">Private Banking Wire Instructions</p>
+                    <p className="font-semibold text-brand-black">Online Bank Transfer / Raast</p>
                     <p>
-                      A 2% courtesy deduction is applied automatically. Upon placing this order, you will receive our Bank of America Private Wealth routing and IBAN coordinates. Funds must be received within 48 hours to secure vault allocation.
+                      A 2% courtesy discount is applied automatically. Upon placing this order, you will receive our official Meezan / HBL Bank account number, IBAN, and Raast ID to complete your payment.
                     </p>
                   </div>
                 )}

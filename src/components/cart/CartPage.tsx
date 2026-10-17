@@ -29,9 +29,9 @@ export const CartPage: React.FC = () => {
   const [giftNote, setGiftNote] = useState('');
   const [includeGiftBox, setIncludeGiftBox] = useState(true);
 
-  const freeShippingThreshold = 500;
+  const freeShippingThreshold = 3000;
   const isFreeShipping = cartSubtotal >= freeShippingThreshold;
-  const shippingCost = isFreeShipping ? 0 : 45;
+  const shippingCost = isFreeShipping ? 0 : 250;
 
   const handleApplyPromo = (e: React.FormEvent) => {
     e.preventDefault();
@@ -39,10 +39,10 @@ export const CartPage: React.FC = () => {
     if (clean === 'AURELIA10') {
       const discount = cartSubtotal * 0.1;
       setAppliedDiscount({ code: 'AURELIA10', percent: 10, amount: discount });
-      addToast('Promo code AURELIA10 applied: 10% luxury discount!', 'gold');
+      addToast('Promo code AURELIA10 applied: 10% discount!', 'gold');
     } else if (clean === 'LUXURY') {
-      setAppliedDiscount({ code: 'LUXURY', percent: 0, amount: 100 });
-      addToast('Promo code LUXURY applied: $100 discount!', 'gold');
+      setAppliedDiscount({ code: 'LUXURY', percent: 0, amount: 500 });
+      addToast('Promo code LUXURY applied: Rs. 500 discount!', 'gold');
     } else {
       addToast('Invalid promo code. Please use AURELIA10 or LUXURY.', 'info');
     }
@@ -54,7 +54,7 @@ export const CartPage: React.FC = () => {
       : appliedDiscount.amount
     : 0;
 
-  const estimatedTax = (cartSubtotal - discountAmount) * 0.05; // 5% luxury tax
+  const estimatedTax = 0; // Inclusive of all taxes in Pakistan
   const finalTotal = Math.max(0, cartSubtotal - discountAmount + shippingCost + estimatedTax);
 
   if (cart.length === 0) {
@@ -236,19 +236,19 @@ export const CartPage: React.FC = () => {
               )}
 
               <div className="flex justify-between">
-                <span>Insured White-Glove Armored Transit</span>
+                <span>Insured Delivery Across Pakistan</span>
                 <span className="text-brand-black font-medium">
-                  {isFreeShipping ? 'Complimentary' : formatPrice(shippingCost)}
+                  {isFreeShipping ? 'Free Delivery' : formatPrice(shippingCost)}
                 </span>
               </div>
 
               <div className="flex justify-between">
-                <span>Estimated Luxury Import / VAT</span>
-                <span className="text-brand-black font-medium">{formatPrice(estimatedTax)}</span>
+                <span>GST / Taxes</span>
+                <span className="text-brand-black font-medium">Included</span>
               </div>
 
               <div className="flex justify-between text-base font-semibold text-brand-black pt-4 border-t border-brand-beige">
-                <span>Total Acquisition</span>
+                <span>Order Total</span>
                 <span className="font-sans text-2xl font-semibold text-brand-black whitespace-nowrap">{formatPrice(finalTotal)}</span>
               </div>
             </div>

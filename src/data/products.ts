@@ -41,7 +41,7 @@ export const LUXURY_PRODUCTS: Product[] = [
       { metal: '18K Rose Gold', colorHex: '#E5A58A' },
       { metal: 'Platinum 950', colorHex: '#ECEEF2', priceModifier: 400 },
     ],
-    deliveryEstimate: '2–4 business days via insured FedEx Priority',
+    deliveryEstimate: '2–4 business days via insured TCS / Leopards courier across Pakistan',
     reviews: [
       {
         id: 'rev-1',

@@ -72,7 +72,7 @@ export const ShopPage: React.FC = () => {
     (filters.metal !== 'All' ? 1 : 0) +
     (filters.gemstone !== 'All' ? 1 : 0) +
     (filters.inStockOnly ? 1 : 0) +
-    (filters.priceRange[1] < 15000 ? 1 : 0);
+    (filters.priceRange[1] < 30000 ? 1 : 0);
 
   return (
     <div className="bg-brand-ivory min-h-screen pb-24">
@@ -195,12 +195,12 @@ export const ShopPage: React.FC = () => {
               </span>
             )}
 
-            {filters.priceRange[1] < 15000 && (
+            {filters.priceRange[1] < 30000 && (
               <span className="inline-flex items-center gap-1.5 bg-white border border-brand-beige text-xs px-2.5 py-1 text-brand-black">
                 Max {formatPrice(filters.priceRange[1])}
                 <X
                   className="w-3 h-3 cursor-pointer hover:text-brand-gold"
-                  onClick={() => setFilters((p) => ({ ...p, priceRange: [0, 15000] }))}
+                  onClick={() => setFilters((p) => ({ ...p, priceRange: [0, 30000] }))}
                 />
               </span>
             )}
@@ -296,7 +296,7 @@ export const ShopPage: React.FC = () => {
               <input
                 type="range"
                 min="1500"
-                max="15000"
+                max="30000"
                 step="500"
                 value={filters.priceRange[1]}
                 onChange={(e) =>
@@ -306,7 +306,7 @@ export const ShopPage: React.FC = () => {
               />
               <div className="flex justify-between text-[10px] text-brand-grey mt-1">
                 <span>{formatPrice(1500)}</span>
-                <span>{formatPrice(15000)}+</span>
+                <span>{formatPrice(30000)}+</span>
               </div>
             </div>
 
@@ -410,7 +410,7 @@ export const ShopPage: React.FC = () => {
                 <input
                   type="range"
                   min="1500"
-                  max="15000"
+                  max="30000"
                   step="500"
                   value={filters.priceRange[1]}
                   onChange={(e) => setFilters((p) => ({ ...p, priceRange: [0, Number(e.target.value)] }))}

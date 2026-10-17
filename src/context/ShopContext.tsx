@@ -65,7 +65,7 @@ const defaultFilters: FilterState = {
   category: 'All',
   metal: 'All',
   gemstone: 'All',
-  priceRange: [0, 15000],
+  priceRange: [0, 30000],
   inStockOnly: false,
   searchQuery: '',
   sortBy: 'featured',
@@ -226,18 +226,18 @@ export const ShopProvider: React.FC<{ children: React.ReactNode }> = ({ children
 
   const resetFilters = () => setFilters(defaultFilters);
 
-  // Currency Converter
-  const formatPrice = (priceInUSD: number) => {
+  // Currency Converter (Base currency: PKR)
+  const formatPrice = (priceInPKR: number) => {
     const rates: Record<CurrencyCode, { rate: number; symbol: string }> = {
-      PKR: { rate: 280, symbol: 'Rs.\u00A0' },
-      USD: { rate: 1, symbol: '$' },
-      AED: { rate: 3.67, symbol: 'AED\u00A0' },
-      GBP: { rate: 0.79, symbol: '£' },
-      EUR: { rate: 0.92, symbol: '€' },
+      PKR: { rate: 1, symbol: 'Rs.\u00A0' },
+      USD: { rate: 1 / 280, symbol: '$' },
+      AED: { rate: 3.67 / 280, symbol: 'AED\u00A0' },
+      GBP: { rate: 0.79 / 280, symbol: '£' },
+      EUR: { rate: 0.92 / 280, symbol: '€' },
     };
 
     const target = rates[currency] || rates.PKR;
-    const converted = Math.round(priceInUSD * target.rate);
+    const converted = Math.round(priceInPKR * target.rate);
     return `${target.symbol}${converted.toLocaleString()}`;
   };
 
