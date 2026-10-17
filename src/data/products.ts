@@ -186,7 +186,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isNew: false,
     images: [
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'The definitive luxury wardrobe cornerstone. 52 calibrated round brilliant diamonds set in a fluid low-profile channel setting that rolls effortlessly over the wrist without catching silk or cashmere.',
@@ -290,9 +290,9 @@ export const LUXURY_PRODUCTS: Product[] = [
     isBestSeller: true,
     isNew: false,
     images: [
-      'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'A monument to modern minimalist opulence. Cast in 42 grams of solid recycled 18K yellow gold with precise fluted ridges that catch sunlight with golden warmth. Equipped with an ergonomic spring hinge.',
     story: 'Handcrafted in Vicenza, Italy, combining Renaissance hand-engraving heritage with contemporary architectural forms.',
@@ -904,7 +904,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isBestSeller: true,
     images: [
       'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'An architectural oval bangle engineered to hug the wrist contour, featuring a continuous ribbon of channel-set diamonds and hidden push clasp.',
@@ -1106,7 +1106,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     isBestSeller: true,
     images: [
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'Bold yet supremely comfortable. Hand-assembled interlocking gourmette links with subtle fluted ridges and custom barrel closure.',
@@ -1278,7 +1278,7 @@ export const CATEGORIES_DATA = [
     slug: 'gold',
     description: 'Substantial solid 18K yellow, rose & white gold',
     itemCount: '56 pieces',
-    image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=80&w=800',
+    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=800',
   },
   {
     name: 'Diamond Jewellery',
@@ -1395,7 +1395,7 @@ export const EDITORIAL_LOOKBOOK = [
   {
     title: 'Sculptural Modernity',
     subtitle: 'Architectural Cuffs & Heavy Italian Links',
-    image: 'https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=85&w=1200',
+    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=85&w=1200',
   },
   {
     title: 'Solitaire Brilliance',

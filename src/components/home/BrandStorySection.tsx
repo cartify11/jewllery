@@ -23,7 +23,7 @@ export const BrandStorySection: React.FC = () => {
             {/* Overlapping Secondary Image */}
             <div className="absolute -bottom-8 -right-2 sm:right-4 z-20 w-3/5 aspect-square overflow-hidden shadow-2xl border-4 border-brand-ivory">
               <img
-                src="https://images.unsplash.com/photo-1573408301185-9146fe634ad0?auto=format&fit=crop&q=85&w=800"
+                src="https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=85&w=800"
                 alt="18K Gold Craftsmanship Detailing"
                 className="w-full h-full object-cover"
                 loading="lazy"
