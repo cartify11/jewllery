@@ -21,8 +21,8 @@ export const HomePage: React.FC = () => {
       <PromotionalBanner />
       <EditorialLookbook />
       <TestimonialsSection />
-      <FaqSection />
       <InstagramGallery />
+      <FaqSection />
     </div>
   );
 };

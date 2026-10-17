@@ -187,7 +187,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'The definitive luxury wardrobe cornerstone. 52 calibrated round brilliant diamonds set in a fluid low-profile channel setting that rolls effortlessly over the wrist without catching silk or cashmere.',
     story: 'Designed with ultra-flexible four-prong linkages that provide liquid motion and maximum comfort for daily luxury or high-society galas.',
@@ -292,7 +292,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'A monument to modern minimalist opulence. Cast in 42 grams of solid recycled 18K yellow gold with precise fluted ridges that catch sunlight with golden warmth. Equipped with an ergonomic spring hinge.',
     story: 'Handcrafted in Vicenza, Italy, combining Renaissance hand-engraving heritage with contemporary architectural forms.',
@@ -903,7 +903,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     stockCount: 3,
     isBestSeller: true,
     images: [
-      'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
     ],
@@ -1107,7 +1107,7 @@ export const LUXURY_PRODUCTS: Product[] = [
     images: [
       'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=1000',
       'https://images.unsplash.com/photo-1617038260897-41a1f14a8ca0?auto=format&fit=crop&q=80&w=1000',
-      'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=1000',
+      'https://images.unsplash.com/photo-1599643477877-530eb83abc8e?auto=format&fit=crop&q=80&w=1000',
     ],
     description: 'Bold yet supremely comfortable. Hand-assembled interlocking gourmette links with subtle fluted ridges and custom barrel closure.',
     story: 'Cast from 38 grams of recycled 18K solid yellow gold in Bassano del Grappa.',
@@ -1313,7 +1313,7 @@ export const INSTAGRAM_POSTS = [
   },
   {
     id: 'ig-4',
-    image: 'https://images.unsplash.com/photo-1600003014755-ba31aa59c4b6?auto=format&fit=crop&q=80&w=600',
+    image: 'https://images.unsplash.com/photo-1611591475879-f12a2e5d7a64?auto=format&fit=crop&q=80&w=600',
     likes: '5,310',
     tag: '@aureliajewels',
     caption: 'Wrist stacks redefined. Solid 18K gold and diamond tennis brilliance.',
