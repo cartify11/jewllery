@@ -21,7 +21,7 @@ export const CartDrawer: React.FC = () => {
 
   if (!isCartOpen) return null;
 
-  const freeShippingThreshold = 500;
+  const freeShippingThreshold = 3000;
   const progressPercent = Math.min(100, Math.round((cartSubtotal / freeShippingThreshold) * 100));
   const amountRemaining = Math.max(0, freeShippingThreshold - cartSubtotal);
 
@@ -31,10 +31,10 @@ export const CartDrawer: React.FC = () => {
     if (clean === 'AURELIA10') {
       const discountVal = cartSubtotal * 0.1;
       setAppliedDiscount({ code: 'AURELIA10', percent: 10, amount: discountVal });
-      addToast('Promo code AURELIA10 applied: 10% luxury discount!', 'gold');
+      addToast('Promo code AURELIA10 applied: 10% discount!', 'gold');
     } else if (clean === 'LUXURY') {
-      setAppliedDiscount({ code: 'LUXURY', percent: 0, amount: 100 });
-      addToast('Promo code LUXURY applied: $100 off your order', 'gold');
+      setAppliedDiscount({ code: 'LUXURY', percent: 0, amount: 500 });
+      addToast('Promo code LUXURY applied: Rs. 500 off your order', 'gold');
     } else {
       addToast('Invalid promotion code. Please try AURELIA10.', 'info');
     }
@@ -56,10 +56,10 @@ export const CartDrawer: React.FC = () => {
         onClick={() => setIsCartOpen(false)}
       />
 
-      <div className="fixed inset-y-0 right-0 max-w-full flex pl-10">
+      <div className="fixed inset-y-0 right-0 max-w-full flex pl-0 sm:pl-10">
         <div className="w-screen max-w-md bg-brand-ivory text-brand-black shadow-drawer flex flex-col justify-between">
           {/* Header */}
-          <div className="px-6 py-5 border-b border-brand-beige flex items-center justify-between bg-[#F8F4EC]">
+          <div className="px-5 sm:px-6 py-4 sm:py-5 border-b border-brand-beige flex items-center justify-between bg-[#F8F4EC]">
             <div>
               <h2 className="font-serif text-lg tracking-luxury uppercase font-medium">Your Shopping Bag</h2>
               <span className="text-xs text-brand-grey tracking-wider">

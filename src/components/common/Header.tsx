@@ -28,10 +28,10 @@ export const Header: React.FC = () => {
   const [announcementIndex, setAnnouncementIndex] = useState(0);
 
   const announcements = [
-    'Complimentary Worldwide Armored Delivery on Orders Over $500',
-    'Private Client Atelier: Book Bespoke Consultations in Paris & London',
-    'Privilege Code: AURELIA10 — 10% Off Your Inaugural Acquisition',
-    '100% Recycled 18K Solid Gold & Conflict-Free Certified Diamonds'
+    'Complimentary Insured Delivery Across Pakistan on Orders Over Rs. 3,000',
+    'VIP Bridal Appointments: Lahore (Gulberg), Karachi (DHA) & Islamabad (F-7)',
+    'Special Welcome Code: AURELIA10 — 10% Off Your First Acquisition',
+    '100% Certified 21K & 22K Solid Gold & Laboratory Tested Diamonds'
   ];
 
   useEffect(() => {
@@ -347,7 +347,7 @@ export const Header: React.FC = () => {
                 </select>
               </div>
               <p className="text-[11px] text-brand-grey text-center">
-                Private Concierge: +1 (800) 489-AURELIA
+                VIP Concierge & WhatsApp: +92 300 1234567
               </p>
             </div>
           </div>

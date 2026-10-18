@@ -375,7 +375,7 @@ export const ProductDetailPage: React.FC = () => {
                 {/* Add to Cart */}
                 <button
                   onClick={handleAddToCart}
-                  className="flex-1 bg-brand-black hover:bg-brand-gold hover:text-brand-black text-white py-4 px-6 text-xs uppercase tracking-luxury font-semibold transition-all duration-300 shadow-md"
+                  className="flex-1 bg-brand-black hover:bg-brand-gold hover:text-brand-black text-white py-3.5 sm:py-4 px-3 sm:px-6 text-[11px] sm:text-xs uppercase tracking-wider sm:tracking-luxury font-semibold transition-all duration-300 shadow-md"
                 >
                   Add to Shopping Bag
                 </button>
@@ -383,7 +383,7 @@ export const ProductDetailPage: React.FC = () => {
                 {/* Wishlist Button */}
                 <button
                   onClick={() => toggleWishlist(product.id)}
-                  className="p-4 border border-brand-beige bg-white hover:border-brand-gold transition-colors text-brand-black"
+                  className="p-3.5 sm:p-4 border border-brand-beige bg-white hover:border-brand-gold transition-colors text-brand-black shrink-0"
                   aria-label="Add to wishlist"
                 >
                   <Heart
@@ -397,9 +397,9 @@ export const ProductDetailPage: React.FC = () => {
               {/* Buy Now Button */}
               <button
                 onClick={handleBuyNow}
-                className="w-full bg-brand-gold hover:bg-brand-gold-light text-brand-black py-4 px-6 text-xs uppercase tracking-luxury font-bold transition-all duration-300 shadow-lg"
+                className="w-full bg-brand-gold hover:bg-brand-gold-light text-brand-black py-3.5 sm:py-4 px-4 sm:px-6 text-[11px] sm:text-xs uppercase tracking-wider sm:tracking-luxury font-bold transition-all duration-300 shadow-lg"
               >
-                Instant Buy Now & Armored Transit
+                Instant Buy Now & Free Insured Delivery
               </button>
             </div>
 
@@ -410,7 +410,7 @@ export const ProductDetailPage: React.FC = () => {
                 <span>Delivery: {product.deliveryEstimate}</span>
               </div>
               <p className="text-brand-grey text-[11px] leading-relaxed pl-6">
-                Discreet armored transport in our signature velvet presentation vault, requiring adult signature.
+                Discreet tamper-proof transport in our signature luxury presentation box with certificate of authenticity.
               </p>
             </div>
 
@@ -732,6 +732,29 @@ export const ProductDetailPage: React.FC = () => {
           </div>
         </div>
       )}
+
+      {/* Mobile Sticky Add to Bag Bar */}
+      <div className="lg:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 backdrop-blur-md border-t border-brand-beige px-4 py-3 flex items-center justify-between gap-3 shadow-2xl">
+        <div className="min-w-0">
+          <span className="block text-xs font-semibold text-brand-black truncate max-w-[150px]">{product.name}</span>
+          <span className="font-sans text-sm font-bold text-brand-gold">{formatPrice(finalPrice)}</span>
+        </div>
+        <div className="flex items-center gap-2">
+          <button
+            onClick={() => toggleWishlist(product.id)}
+            className="p-2.5 border border-brand-beige text-brand-black bg-white"
+            aria-label="Wishlist"
+          >
+            <Heart className={`w-4 h-4 ${isInWishlist(product.id) ? 'fill-brand-gold text-brand-gold' : ''}`} />
+          </button>
+          <button
+            onClick={handleAddToCart}
+            className="bg-brand-black hover:bg-brand-gold text-white hover:text-brand-black text-xs font-semibold uppercase tracking-wider py-2.5 px-4 shadow-md whitespace-nowrap"
+          >
+            Add to Bag
+          </button>
+        </div>
+      </div>
     </div>
   );
 };

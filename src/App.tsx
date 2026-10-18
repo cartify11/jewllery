@@ -71,7 +71,7 @@ const AppContent: React.FC = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-brand-ivory text-brand-black selection:bg-brand-gold selection:text-white">
+    <div className="min-h-screen flex flex-col bg-brand-ivory text-brand-black selection:bg-brand-gold selection:text-white overflow-x-hidden w-full">
       <Header />
       <main className="flex-1">
         {renderCurrentPage()}

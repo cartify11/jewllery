@@ -27,17 +27,17 @@ export const FeaturedCategories: React.FC = () => {
           </h2>
           <div className="w-12 h-[1px] bg-brand-gold mx-auto mt-4" />
           <p className="text-xs sm:text-sm text-stone-600 mt-4 leading-relaxed font-normal">
-            Every creation is designed in our European ateliers, marrying classical goldsmithing techniques with contemporary sculptural proportions.
+            Every creation is handcrafted with pure 21K & 22K solid hallmarked gold and certified diamonds.
           </p>
         </div>
 
         {/* Categories Grid (6 Cards) */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-8">
           {CATEGORIES_DATA.map((cat) => (
             <div
               key={cat.name}
               onClick={() => handleCategoryClick(cat.name)}
-              className="group relative h-[380px] sm:h-[420px] overflow-hidden bg-brand-black cursor-pointer shadow-luxury border border-brand-beige/80 transition-all duration-500"
+              className="group relative h-[280px] sm:h-[420px] overflow-hidden bg-brand-black cursor-pointer shadow-luxury border border-brand-beige/80 transition-all duration-500"
             >
               {/* Image */}
               <img
@@ -51,7 +51,7 @@ export const FeaturedCategories: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-brand-black/90 via-black/30 to-transparent transition-opacity duration-300" />
 
               {/* Content overlay */}
-              <div className="absolute inset-0 p-8 flex flex-col justify-end">
+              <div className="absolute inset-0 p-5 sm:p-8 flex flex-col justify-end">
                 <div className="flex items-center justify-between">
                   <div>
                     <span className="text-[10px] uppercase tracking-luxury text-brand-gold font-medium">

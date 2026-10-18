@@ -22,9 +22,9 @@ export const HeroSection: React.FC = () => {
       {/* Hero Content Box */}
       <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white flex flex-col items-center">
         {/* Subtle Luxury Crest */}
-        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-gold text-[11px] uppercase tracking-[0.28em] font-medium mb-6">
+        <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-brand-gold text-[10px] sm:text-[11px] uppercase tracking-[0.25em] font-medium mb-6">
           <Sparkles className="w-3.5 h-3.5 text-brand-gold animate-pulse" />
-          <span>Haute Joaillerie 2026 Collection</span>
+          <span>Royal Bridal & Fine Jewellery Collection</span>
         </div>
 
         {/* Main Headline */}
@@ -35,7 +35,7 @@ export const HeroSection: React.FC = () => {
 
         {/* Supporting Copy */}
         <p className="mt-6 text-sm sm:text-base md:text-lg text-brand-ivory/95 max-w-2xl font-normal leading-relaxed tracking-wide">
-          Discover jewellery that celebrates your individuality and makes every moment unforgettable. Hand-sculpted in 18K solid gold and certified ethical gemstones.
+          Discover jewellery that celebrates your individuality and makes every moment unforgettable. Handcrafted in pure 21K & 22K solid hallmarked gold and certified diamonds.
         </p>
 
         {/* Action CTAs */}
@@ -56,19 +56,19 @@ export const HeroSection: React.FC = () => {
           </button>
         </div>
 
-        {/* Trust Mini-Bar */}
-        <div className="mt-16 pt-8 border-t border-white/15 grid grid-cols-3 gap-6 sm:gap-12 text-[10px] sm:text-xs text-brand-beige/80 uppercase tracking-luxury max-w-xl">
-          <div className="flex items-center justify-center gap-2">
+        {/* Trust Mini-Bar (Mobile Optimized) */}
+        <div className="mt-16 pt-8 border-t border-white/15 grid grid-cols-3 gap-2 sm:gap-8 text-[9px] sm:text-xs text-brand-beige/80 uppercase tracking-wider sm:tracking-luxury max-w-xl text-center">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
             <Gem className="w-4 h-4 text-brand-gold shrink-0" />
-            <span>Ethical Conflict-Free</span>
+            <span>Certified Diamonds</span>
           </div>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
             <Award className="w-4 h-4 text-brand-gold shrink-0" />
-            <span>18K Solid Gold</span>
+            <span>21K / 22K Gold</span>
           </div>
-          <div className="flex items-center justify-center gap-2">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-1 sm:gap-2">
             <Shield className="w-4 h-4 text-brand-gold shrink-0" />
-            <span>Lifetime Authenticity</span>
+            <span>Lifetime Guarantee</span>
           </div>
         </div>
       </div>

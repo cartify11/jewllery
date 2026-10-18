@@ -32,15 +32,15 @@ export const Footer: React.FC = () => {
   return (
     <footer className="bg-brand-black text-brand-beige border-t border-brand-charcoal pt-16 pb-12">
       {/* 1. Value Pillars & Trust Badges */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16 border-b border-white/10">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-12 sm:pb-16 border-b border-white/10">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center md:text-left">
           <div className="flex flex-col items-center md:items-start space-y-2">
             <div className="w-10 h-10 rounded-full bg-brand-charcoal flex items-center justify-center text-brand-gold mb-2">
               <Gem className="w-5 h-5 stroke-[1.5]" />
             </div>
-            <h4 className="text-white text-xs uppercase tracking-luxury font-medium">Master Artisanship</h4>
-            <p className="text-brand-grey text-xs leading-relaxed max-w-xs">
-              Hand-finished in Europe using recycled 18K solid gold and hand-selected certified stones.
+            <h4 className="text-white text-[11px] sm:text-xs uppercase tracking-luxury font-medium">Master Artisanship</h4>
+            <p className="text-brand-grey text-[11px] sm:text-xs leading-relaxed max-w-xs">
+              Handcrafted by master goldsmiths using certified 22K/18K gold and authentic gemstones.
             </p>
           </div>
 
@@ -48,9 +48,9 @@ export const Footer: React.FC = () => {
             <div className="w-10 h-10 rounded-full bg-brand-charcoal flex items-center justify-center text-brand-gold mb-2">
               <Truck className="w-5 h-5 stroke-[1.5]" />
             </div>
-            <h4 className="text-white text-xs uppercase tracking-luxury font-medium">Armored Courier Transit</h4>
-            <p className="text-brand-grey text-xs leading-relaxed max-w-xs">
-              Complimentary discreet, fully-insured delivery directly to your residence or private bank.
+            <h4 className="text-white text-[11px] sm:text-xs uppercase tracking-luxury font-medium">All-Pakistan Delivery</h4>
+            <p className="text-brand-grey text-[11px] sm:text-xs leading-relaxed max-w-xs">
+              Fast, insured shipping via TCS & Leopards with Cash on Delivery (COD) across Pakistan.
             </p>
           </div>
 
@@ -58,9 +58,9 @@ export const Footer: React.FC = () => {
             <div className="w-10 h-10 rounded-full bg-brand-charcoal flex items-center justify-center text-brand-gold mb-2">
               <RotateCcw className="w-5 h-5 stroke-[1.5]" />
             </div>
-            <h4 className="text-white text-xs uppercase tracking-luxury font-medium">30-Day Privilege Returns</h4>
-            <p className="text-brand-grey text-xs leading-relaxed max-w-xs">
-              Complimentary return shipping and exchanges with our tamper-evident signature vault seal.
+            <h4 className="text-white text-[11px] sm:text-xs uppercase tracking-luxury font-medium">7-Day Easy Return</h4>
+            <p className="text-brand-grey text-[11px] sm:text-xs leading-relaxed max-w-xs">
+              Hassle-free 7-day returns and size adjustments for complete peace of mind.
             </p>
           </div>
 
@@ -68,19 +68,19 @@ export const Footer: React.FC = () => {
             <div className="w-10 h-10 rounded-full bg-brand-charcoal flex items-center justify-center text-brand-gold mb-2">
               <ShieldCheck className="w-5 h-5 stroke-[1.5]" />
             </div>
-            <h4 className="text-white text-xs uppercase tracking-luxury font-medium">Lifetime Authenticity</h4>
-            <p className="text-brand-grey text-xs leading-relaxed max-w-xs">
-              Accompanied by GIA/GRS gemological reports and official governmental hallmark certification.
+            <h4 className="text-white text-[11px] sm:text-xs uppercase tracking-luxury font-medium">100% Certified Gold</h4>
+            <p className="text-brand-grey text-[11px] sm:text-xs leading-relaxed max-w-xs">
+              Official hallmark purity guarantee with every luxury jewellery purchase.
             </p>
           </div>
         </div>
       </div>
 
       {/* 2. Main Footer Navigation Grid */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
           {/* Brand Column */}
-          <div className="lg:col-span-2 space-y-6">
+          <div className="sm:col-span-2 space-y-5">
             <div>
               <div className="flex items-center gap-1.5 text-brand-gold mb-1">
                 <Sparkles className="w-4 h-4" />
@@ -90,26 +90,26 @@ export const Footer: React.FC = () => {
                 AURELIA JEWELS
               </h3>
               <p className="text-brand-gold text-[10px] tracking-[0.4em] uppercase mt-1">
-                High Fine Jewellery
+                Fine Luxury & Bridal Jewellery
               </p>
             </div>
 
             <p className="text-brand-grey text-xs leading-relaxed max-w-sm">
-              Aurelia Jewels creates transcendent fine jewellery born from uncompromising craftsmanship, sustainable metallurgy, and rare, ethically sourced gemstones. Timeless elegance crafted to illuminate your individuality.
+              Pakistan's premier destination for fine gold, bridal polki sets, certified solitaire rings, and timeless gemstone jewellery. Handcrafted to celebrate your most precious moments.
             </p>
 
-            <div className="pt-2 text-xs space-y-2 text-brand-grey">
-              <div className="flex items-center gap-2">
-                <MapPin className="w-4 h-4 text-brand-gold shrink-0" />
-                <span>Salons: Place Vendôme, Paris • Bond St, London • Madison Ave, New York</span>
+            <div className="pt-2 text-xs space-y-2.5 text-brand-grey">
+              <div className="flex items-start gap-2">
+                <MapPin className="w-4 h-4 text-brand-gold shrink-0 mt-0.5" />
+                <span>Salons: MM Alam Rd (Lahore) • Clifton (Karachi) • Beverly Centre (Islamabad)</span>
               </div>
               <div className="flex items-center gap-2">
                 <PhoneCall className="w-4 h-4 text-brand-gold shrink-0" />
-                <span>VIP Concierge: +1 (800) 489-AURELIA</span>
+                <span>WhatsApp / Helpline: +92 300 1234567</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-4 h-4 text-brand-gold shrink-0" />
-                <span>concierge@aureliajewels.com</span>
+                <span>concierge@aureliajewels.pk</span>
               </div>
             </div>
           </div>
@@ -270,24 +270,25 @@ export const Footer: React.FC = () => {
       </div>
 
       {/* 4. Bottom Legal, Payment Badges & Copyright */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] text-brand-grey">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-8 flex flex-col md:flex-row items-center justify-between gap-6 text-[11px] text-brand-grey text-center md:text-left">
         <div>
-          <p>© 2026 AURELIA JEWELS MAISON S.A. All rights reserved. Registered High Fine Jeweller.</p>
+          <p>© 2026 AURELIA JEWELS PAKISTAN. All rights reserved. Registered Fine Luxury Jeweller.</p>
         </div>
 
         {/* Payment and Security Emblems */}
-        <div className="flex items-center space-x-4">
+        <div className="flex flex-wrap items-center justify-center gap-3">
           <span className="flex items-center gap-1 text-white/80">
             <Lock className="w-3.5 h-3.5 text-brand-gold" />
             256-Bit SSL Encrypted Vault Checkout
           </span>
-          <span className="text-white/40">|</span>
-          <div className="flex items-center space-x-2">
+          <span className="hidden sm:inline text-white/40">|</span>
+          <div className="flex flex-wrap items-center justify-center gap-2">
+            <span className="border border-brand-gold/40 text-brand-gold px-2 py-0.5 rounded text-[10px] font-medium">CASH ON DELIVERY</span>
+            <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">JAZZCASH</span>
+            <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">EASYPAISA</span>
             <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">VISA</span>
             <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">MASTERCARD</span>
-            <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">AMEX</span>
-            <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">APPLE PAY</span>
-            <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">WIRE</span>
+            <span className="border border-white/20 px-2 py-0.5 rounded text-[10px] text-white">BANK TRANSFER</span>
           </div>
         </div>
       </div>

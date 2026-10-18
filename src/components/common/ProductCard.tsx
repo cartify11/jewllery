@@ -88,8 +88,8 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           />
         </button>
 
-        {/* Hover Quick Actions */}
-        <div className="absolute inset-x-2.5 bottom-2.5 z-10 flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-1 group-hover:translate-y-0">
+        {/* Hover Quick Actions (Desktop only, mobile taps open product) */}
+        <div className="absolute inset-x-2.5 bottom-2.5 z-10 hidden sm:flex items-center gap-1.5 opacity-0 group-hover:opacity-100 transition-all duration-300 transform translate-y-1 group-hover:translate-y-0">
           <button
             onClick={handleQuickView}
             className="flex-1 bg-white/95 hover:bg-brand-black hover:text-white text-brand-black py-2 px-3 text-[10px] uppercase tracking-[0.16em] font-sans font-medium border border-brand-beige/80 backdrop-blur-sm shadow-sm flex items-center justify-center gap-1.5 transition-all whitespace-nowrap"
@@ -110,25 +110,25 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       </div>
 
       {/* Info Content Area */}
-      <div className="p-4 sm:p-5 flex flex-col flex-1 justify-between bg-white">
+      <div className="p-3 sm:p-5 flex flex-col flex-1 justify-between bg-white">
         <div>
-          <div className="flex items-center justify-between text-[10px] uppercase tracking-[0.18em] text-brand-gold-dark font-medium mb-1.5">
-            <span>{product.category}</span>
-            <span className="text-stone-400 font-normal">{product.metal}</span>
+          <div className="flex items-center justify-between text-[9px] sm:text-[10px] uppercase tracking-[0.15em] sm:tracking-[0.18em] text-brand-gold-dark font-medium mb-1">
+            <span className="truncate max-w-[90px] sm:max-w-none">{product.category}</span>
+            <span className="text-stone-400 font-normal truncate max-w-[80px] sm:max-w-none">{product.metal}</span>
           </div>
 
-          <h3 className="font-serif text-[15px] sm:text-base font-medium text-brand-black line-clamp-1 group-hover:text-brand-gold-dark transition-colors tracking-normal">
+          <h3 className="font-serif text-sm sm:text-base font-medium text-brand-black line-clamp-1 group-hover:text-brand-gold-dark transition-colors tracking-normal">
             {product.name}
           </h3>
 
-          <p className="font-sans text-[11px] sm:text-[12px] text-stone-500 mt-1 line-clamp-1 font-normal tracking-normal leading-normal">
+          <p className="font-sans text-[10.5px] sm:text-[12px] text-stone-500 mt-1 line-clamp-1 font-normal tracking-normal leading-normal">
             {product.subtitle}
           </p>
         </div>
 
-        <div className="mt-4 pt-3 border-t border-brand-beige/50 flex items-center justify-between gap-2">
+        <div className="mt-3 sm:mt-4 pt-2.5 sm:pt-3 border-t border-brand-beige/50 flex items-center justify-between gap-1.5 sm:gap-2">
           <div className="flex flex-col sm:flex-row sm:items-baseline sm:gap-2">
-            <span className="font-sans text-[14.5px] sm:text-[15.5px] font-semibold text-brand-black tracking-tight whitespace-nowrap">
+            <span className="font-sans text-xs sm:text-[15.5px] font-semibold text-brand-black tracking-tight whitespace-nowrap">
               {formatPrice(product.price)}
             </span>
             {product.originalPrice && (
